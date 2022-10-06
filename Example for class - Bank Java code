@@ -1,0 +1,26 @@
+import java.util.Scanner;
+class bank{
+    String accno;
+    Long balance;
+    Scanner ob=new Scanner(System.in);
+    void get_acc_details()
+    {
+        System.out.print("Enter the Account number:");
+        accno=ob.next();
+        System.out.print("Enter the balance:");
+        balance=ob.nextLong();
+    }
+    void display()
+    {
+        System.out.println("Account number" +accno);
+        System.out.println("Balance" +balance);
+    }
+}
+class Main{
+    public static void main(String[] args)
+    {
+        bank obj=new bank();
+        obj.get_acc_details();
+        obj.display();
+    }
+}
